@@ -1,34 +1,43 @@
-# Student Marks Tracker (MS Excel)
+# Student Marks Tracker
 
-An Excel project that tracks the marks of 100 students and automatically calculates Average, Total and Pass/Fail results.
+A dataset of 100 students' marks with Average, Total and Pass/Fail results, built for practicing Excel formulas and data analysis.
 
-## Columns
+## Data File
+`Student_Data_1.csv` has one row per student.
+
 | Column | Description |
 |---|---|
 | Roll No, Name | Student details |
-| Python, Maths, Tamil, AI Basics, English | Subject marks (out of 100) |
+| Python, Maths, TAMIL, AI Basics, English | Subject marks (out of 100) |
 | Days Present | Attendance days |
-| Average | `=AVERAGE(C2:G2)` |
-| Total | `=SUM(C2:G2)` |
-| Result | `=IF(MIN(C2:G2)<40,"FAIL","PASS")` |
+| AVERAGE | Average of the 5 subject marks |
+| TOTAL | Sum of the 5 subject marks |
+| RESULT | PASS or FAIL |
 
 ## Rule
 A student fails if the marks in any one subject are below 40.
 
-## Features
-- Sample data of 100 students
-- Formulas using SUM, AVERAGE, IF and MIN
-- Conditional formatting to highlight low marks and failed students
+## Excel Formulas Used
+Open the CSV in Excel. If you want the columns to calculate automatically, use these formulas in row 2 and fill down:
 
-## How to use
-1. Download `Student_Marks_Tracker.xlsx`
-2. Open it in Microsoft Excel
-3. Replace the sample marks with your own data. The formulas update automatically
+| Column | Formula |
+|---|---|
+| Average | `=AVERAGE(C2:G2)` |
+| Total | `=SUM(C2:G2)` |
+| Result | `=IF(MIN(C2:G2)<40,"FAIL","PASS")` |
 
-## Result of sample data
+You can also add conditional formatting to highlight marks below 40 and FAIL rows.
+
+## Result of the Data
 - Total students: 100
 - Pass: 82
 - Fail: 18
 
+## How to Use
+1. Download `Student_Data_1.csv`
+2. Open it in Microsoft Excel or Google Sheets
+3. Replace the sample marks with your own data and apply the formulas above
+
 ## Author
-Pravin Raj S
+**Pravin Raj S**
+GitHub: [spravinraj78-cpu](https://github.com/spravinraj78-cpu)
